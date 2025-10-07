@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET 9 Launch (No Browser)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}/SsePocBackend/SsePocBackend.csproj"
+      ],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      // keeps the console output, hides noisy module load spam
+      "logging": { "moduleLoad": false, "programOutput": true }
+      // no "launchBrowser" on purpose
+    }
+  ]
+}
